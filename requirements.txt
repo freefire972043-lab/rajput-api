@@ -1,6 +1,0 @@
-pyTelegramBotAPI
-requests
-Flask
-schedule
-pytz
-gunicorn
