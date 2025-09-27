@@ -1,7 +1,7 @@
 import telebot
 import requests
 import time
-import threading
+kiimport threading
 import sqlite3
 from flask import Flask
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
@@ -62,7 +62,7 @@ def set_new_api(new_api):
     conn.commit()
     conn.close()
 
-def add_user_to_autolike(user_id, chat_id, uid, region, expiration_timestamp):
+def add_user_to_autolike(user_id, chat_id, uid, r egion, expiration_timestamp):
     conn = sqlite3.connect("autolike.db", check_same_thread=False)
     c = conn.cursor()
     c.execute("REPLACE INTO autolike_users VALUES (?, ?, ?, ?, ?, ?)",
